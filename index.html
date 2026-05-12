@@ -1,32 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home - Student Portal</title>
+    <title>Group 13 Webpage</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: darkblue;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+        }
+
+        #about img{
+            width: 500px;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        h2{
+            text-align: center;
+            color: darkred;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Student Portal</h1>
+    <!-- HEADER -->
+    <header>
+        <h1 style="color: green;">GROUP 13</h1>
+        <p><i>University Web Development Group</i></p>
+    </header>
 
-    <h2>My Daily Routine</h2>
-    <ol>
-        <li>Wake up</li>
-        <li>Attend classes</li>
-        <li>Study</li>
-        <li>Do assignments</li>
-        <li>Sleep</li>
-    </ol>
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#routine">Daily Routine</a></li>
+        </ul>
+    </nav>
 
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Reading</li>
-        <li>Coding</li>
-        <li>Football</li>
-        <li>Music</li>
-    </ul>
+    <!-- ABOUT SECTION -->
+    <section id="about">
 
-    <h2>Navigation</h2>
-    <a href="timetable.html">Go to Timetable</a> <br><br>
-    <a href="contact.html">Go to Contact Page</a>
+        <h2>About Us</h2>
+
+        <!-- REAL ONLINE IMAGE -->
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop">
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <ul>
+            <li>HTML skills</li>
+            <li>CSS skills</li>
+            <li>C++ skills</li>
+            <li>Communication skills</li>
+            <li>Teamwork skills</li>
+        </ul>
+    </section>
+
+    <!-- DAILY ROUTINE -->
+    <section id="routine">
+        <h2>Daily Routine</h2>
+
+        <ol>
+            <li>Wake up</li>
+            <li>Attend classes</li>
+            <li>Group discussion</li>
+            <li>Practice coding</li>
+            <li>Do assignments</li>
+            <li>Sleep</li>
+        </ol>
+    </section>
 
 </body>
 </html>

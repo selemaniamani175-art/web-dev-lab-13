@@ -1,0 +1,31 @@
+/* ELEMENT SELECTOR */
+body{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* ID SELECTOR */
+#header{
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+}
+
+/* CLASS SELECTOR */
+.section{
+    background-color: red;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* GROUP SELECTOR */
+h1,h2,p{
+    margin-bottom: 10px;
+}
+
+/* DESCENDANT SELECTOR */
+section p{
+    color: black;
+}
