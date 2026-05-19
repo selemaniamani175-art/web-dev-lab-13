@@ -1,103 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Group 13 Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Layout Control</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-        }
+<style>
 
-        nav {
-            background-color: darkblue;
-            padding: 10px;
-        }
+/* BODY */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-color:#d9f0ff;
+}
 
-        nav ul {
-            list-style-type: none;
-        }
+/* HEADER */
+header{
+    background-color:darkblue;
+    color:white;
+    text-align:center;
+    padding:20px;
+    position:fixed;
+    width:100%;
+    top:0;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
+/* NAVIGATION */
+nav{
+    background-color:#0099cc;
+    padding:15px;
+    margin-top:90px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+nav ul{
+    list-style:none;
+    text-align:center;
+    padding:0;
+}
 
-        nav ul li a:hover {
-            color: yellow;
-        }
+nav ul li{
+    display:inline;
+    margin:20px;
+}
 
-        #about img{
-            width: 500px;
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-        }
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        h2{
-            text-align: center;
-            color: darkred;
-        }
-    </style>
+/* BOXES */
+.boxes{
+    padding:20px;
+}
+
+.box{
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    color:white;
+}
+
+/* COLORS */
+.box:nth-child(1){
+    background-color:crimson;
+}
+
+.box:nth-child(2){
+    background-color:seagreen;
+}
+
+.box:nth-child(3){
+    background-color:orange;
+}
+
+/* POSITION */
+.position-container{
+    position:relative;
+    background-color:white;
+    border:4px solid red;
+    padding:40px;
+    margin:20px;
+    border-radius:10px;
+}
+
+.label{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background-color:red;
+    color:white;
+    padding:8px;
+    border-radius:5px;
+}
+
+/* FLOAT */
+.layout{
+    margin:20px;
+}
+
+.main-content{
+    float:left;
+    width:60%;
+    background-color:#3399ff;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+.sidebar{
+    float:right;
+    width:25%;
+    background-color:purple;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    clear:both;
+    background-color:darkblue;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1 style="color: green;">GROUP 13</h1>
-        <p><i>University Web Development Group</i></p>
-    </header>
+<header>
+    <h1>GROUP 13 WEEK 04</h1>
+</header>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#routine">Daily Routine</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
+<section class="boxes">
 
-        <h2>About Us</h2>
+    <div class="box">
+        <h2>Box One</h2>
+        <p>This box demonstrates padding, border, and margin.</p>
+    </div>
 
-        <!-- REAL ONLINE IMAGE -->
-        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop">
+    <div class="box">
+        <h2>Box Two</h2>
+        <p>Margin creates space outside the box.</p>
+    </div>
 
-    </section>
+    <div class="box">
+        <h2>Box Three</h2>
+        <p>Padding creates internal spacing inside the box.</p>
+    </div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
+</section>
 
-        <ul>
-            <li>HTML skills</li>
-            <li>CSS skills</li>
-            <li>C++ skills</li>
-            <li>Communication skills</li>
-            <li>Teamwork skills</li>
-        </ul>
-    </section>
+<section class="position-container">
 
-    <!-- DAILY ROUTINE -->
-    <section id="routine">
-        <h2>Daily Routine</h2>
+    <span class="label">NEW</span>
 
-        <ol>
-            <li>Wake up</li>
-            <li>Attend classes</li>
-            <li>Group discussion</li>
-            <li>Practice coding</li>
-            <li>Do assignments</li>
-            <li>Sleep</li>
-        </ol>
-    </section>
+    <p>
+        This container demonstrates relative and absolute positioning.
+    </p>
+
+</section>
+
+<section class="layout">
+
+    <div class="main-content">
+        <h2>Main Content</h2>
+        <p>This section is floated to the left.</p>
+    </div>
+
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This sidebar is floated to the right.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Footer Section</p>
+</footer>
 
 </body>
 </html>
