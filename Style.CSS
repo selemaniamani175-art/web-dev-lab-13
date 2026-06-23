@@ -1,31 +1,52 @@
-/* ELEMENT SELECTOR */
 body{
-    background-color: lightgray;
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    background-color: #f4f4f4;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
 }
 
-/* ID SELECTOR */
-#header{
-    text-align: center;
-    background-color: red;
-    padding: 20px;
+.container{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+
+    width:350px;
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-/* CLASS SELECTOR */
-.section{
-    background-color: red;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
+h1{
+    margin-bottom:20px;
 }
 
-/* GROUP SELECTOR */
-h1,h2,p{
-    margin-bottom: 10px;
+input{
+    width:90%;
+    padding:10px;
+    margin-bottom:15px;
 }
 
-/* DESCENDANT SELECTOR */
-section p{
-    color: black;
+button{
+    padding:10px 20px;
+    cursor:pointer;
+
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#results{
+    margin-top:20px;
+    padding:10px;
+    border:1px solid #ccc;
+    min-height:40px;
 }
