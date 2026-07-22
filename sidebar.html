@@ -1,0 +1,73 @@
+<div class="sidebar">
+
+
+<ul>
+
+
+<li>
+<a class="{% if request.path == '/' %}active{% endif %}" 
+href="{% url 'dashboard' %}">
+Dashboard
+</a>
+</li>
+
+
+
+<li>
+<a class="{% if request.path == '/students/' %}active{% endif %}" 
+href="{% url 'students' %}">
+Students
+</a>
+</li>
+
+
+
+<li>
+<a class="{% if request.path == '/courses/' %}active{% endif %}" 
+href="{% url 'courses' %}">
+Courses
+</a>
+</li>
+
+
+
+<li>
+<a class="{% if request.path == '/lecturers/' %}active{% endif %}" 
+href="{% url 'lecturers' %}">
+Lecturers
+</a>
+</li>
+
+
+
+<li>
+<a class="{% if request.path == '/departments/' %}active{% endif %}" 
+href="{% url 'departments' %}">
+Departments
+</a>
+</li>
+
+
+
+<li>
+<a class="{% if request.path == '/profile/' %}active{% endif %}" 
+href="{% url 'profile' %}">
+Profile
+</a>
+</li>
+
+
+
+<li>
+<a class="{% if request.path == '/settings/' %}active{% endif %}" 
+href="{% url 'settings' %}">
+Settings
+</a>
+</li>
+
+
+
+</ul>
+
+
+</div>

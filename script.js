@@ -1,0 +1,1 @@
+console.log("Student Management Portal Loaded Successfully");
